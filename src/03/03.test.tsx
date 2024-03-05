@@ -1,0 +1,1 @@
+test('new tach skill chould be added  ')

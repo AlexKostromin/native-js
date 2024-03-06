@@ -27,9 +27,12 @@ export const denolishHousesOnTheStreet = (city: CityType, street: string) => {
 export const repairHouse = (house: HousesType) => {
     house.repaired = true
 }
-export const toFireStaff = (building: GovernmentBuildingsType, staffCountFire:number) => {
-    building.staffCount+=staffCountFire
+export const toFireStaff = (building: GovernmentBuildingsType, staffCountFire: number) => {
+    building.staffCount -= staffCountFire
 }
-export const toHireStaff = (building: GovernmentBuildingsType, staffCountHire:number) => {
-    building.staffCount+=staffCountHire
+export const toHireStaff = (building: GovernmentBuildingsType, staffCountHire: number) => {
+    building.staffCount += staffCountHire
+}
+export const createMessage = (city:CityType) => {
+    return `Hello ${city.title} citizens. I want you be happy. All ${city.citizensNumber} men`
 }

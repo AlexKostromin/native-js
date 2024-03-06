@@ -7,8 +7,11 @@ export type StudentType = {
     technologies:Technologies[]
 }
 export type AddressType = {
-    city:string
+    city:LocalCityType
     countryTitle:string
+}
+type LocalCityType = {
+    title:string
 }
 type Technologies = {
     id:number
@@ -21,7 +24,8 @@ const student:StudentType = {
     age: 27,
     isActive: false,
     address: {
-        city: 'Voistrochenko',
+        city:
+            {title:'Moscow'},
         countryTitle: 'Russia'
     },
     technologies: [

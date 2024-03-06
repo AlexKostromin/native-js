@@ -1,10 +1,11 @@
 export type CityType = {
     title: string
     houses: HousesType[]
-    governmentBuildings: governmentBuildingsType[]
+    governmentBuildings: GovernmentBuildingsType[]
     citizensNumber: number
 }
 type HousesType = {
+    id:number
     buildedAt: number
     repaired: boolean
     address: LocalAddressType
@@ -16,7 +17,7 @@ type LocalAddressType = {
 type StreetType = {
     title: string
 }
-type governmentBuildingsType = {
+export type GovernmentBuildingsType = {
     type: 'HOSPITAL' | 'FIRE-STATION'
     budget: number
     staffCount: number

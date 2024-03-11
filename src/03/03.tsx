@@ -1,7 +1,7 @@
 import {StudentType} from "../02/02";
 import {CityType, GovernmentBuildingsType} from "../02/02_02";
 import exp from "node:constants";
-
+import {HousesType} from '../02/02_02'
 export const AddSkill = (student: StudentType, skill: string) => {
     student.technologies.push(
         {

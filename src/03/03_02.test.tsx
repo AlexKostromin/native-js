@@ -1,5 +1,5 @@
 import {CityType} from "../02/02_02";
-import {addMoneyToBudget, createMessage, denolishHousesOnTheStreet, repairHouse, toFireStaff, toHireStaff} from "./03";
+import {addMoneyToBudget, createMessage, repairHouse, toFireStaff, toHireStaff} from "./03";
 
 let city: CityType
 beforeEach(() => {
@@ -49,11 +49,11 @@ test('Budget should be changed for FIRE-STATION', () => {
 
     expect(city.governmentBuildings[1].budget).toBe(400000)
 })
-test.skip('Houses should be destroyed', () => {
+/*test.skip('Houses should be destroyed', () => {
     denolishHousesOnTheStreet(city, 'Happy street')
     expect(city.houses.length).toBe(1)
     expect(city.houses[0].id).toBe(1)
-})
+})*/
 
 test('House should be repaired', () => {
     repairHouse(city.houses[1])
